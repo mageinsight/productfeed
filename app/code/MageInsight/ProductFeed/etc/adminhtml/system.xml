@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<section id="feed_generation" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label">
+			<label>Feed Generation</label>
+			<tab>catalog</tab>
+			<resource>MageInsight_ProductFeed::config</resource>
+			<group id="cron" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label">
+				<label>Cron configuration</label>
+				<field id="schedule_product" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
+					<label>Schedule for Product</label>
+					<comment>Set value 0 0 30 2 * to disable cron.</comment>
+				</field>
+				<field id="schedule_price" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
+					<label>Schedule for Price</label>
+					<comment>Set value 0 0 30 2 * to disable cron.</comment>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>

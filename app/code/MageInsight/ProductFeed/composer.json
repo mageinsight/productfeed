@@ -1,0 +1,25 @@
+{
+    "name": "mageinsight/product-feed",
+    "description": "Generate Product Feed",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "MageInsight",
+            "email": "mageinsight@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "~8.0.0|~8.1.0"
+    },
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": ["registration.php"],
+        "psr-4": {
+            "MageInsight\\ProductFeed\\": ""
+        }
+    }
+}

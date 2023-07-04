@@ -1,0 +1,6 @@
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="catalog_eav_attribute" resource="default" engine="innodb" comment="Catalog EAV Attribute Table">
+        <column xsi:type="smallint" name="used_in_feed" unsigned="true" nullable="false" identity="false" default="0" comment="Used in Feed"/>
+   </table>
+</schema>

@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+    <group id="default">
+        <job name="product_feed" instance="MageInsight\ProductFeed\Cron\GenerateFeed" method="generateProductFeed">
+            <schedule>feed/cron/schedule_product</schedule>
+        </job>
+        <job name="price_feed" instance="MageInsight\ProductFeed\Cron\GenerateFeed" method="generatePriceFeed">
+            <schedule>feed/cron/schedule_price</schedule>
+        </job>
+    </group>
+</config>
